@@ -106,7 +106,7 @@ def check():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://raw.githubusercontent.com/zubi-0007/bsn/main/z.txt').text
+    httpCaht = requests.get('https://github.com/FBXHACK/approval/tree/main').text
     if id in httpCaht:
       print("\033[1;92mYour Token is successfully Approved")
       msg = str(os.geteuid())
